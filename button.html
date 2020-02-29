@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Javascript</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body id="body">
+    <h1>My First Button</h1>
+    
+    <div id="buttonContainer" >
+            <button id="myButton" onclick="myFunction()">My name is:</button>
+    
+    </div>
+<script>
+    let button = document.getElementById('myButton');
+    let body = document.getElementById('body');
+
+       
+   
+    console.log( button.innerHTML);
+    
+    function myFunction(){
+        
+
+        
+        if(button.innerHTML != 'Jose Luis' ){
+                button.innerHTML = 'Jose Luis';
+            button.style.backgroundColor = 'blue';
+            body.style.backgroundColor = 'red';
+
+            
+           }else{
+                button.innerHTML = 'My name is:'; 
+               button.style.backgroundColor = 'red';
+               body.style.backgroundColor = 'blue';
+              
+
+           }  
+        
+    }
+    
+    function sum(a,b){
+        c = a + b;
+        return c
+    }
+
+</script>
+</body>
+    
+</html>
